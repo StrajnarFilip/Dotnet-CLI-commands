@@ -8,5 +8,5 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.
 # Generate controller
 
 ```sh
-dotnet-aspnet-codegenerator.exe controller -async -api -outDir Controllers -name MyController
+dotnet-aspnet-codegenerator controller -async -api -outDir Controllers -name MyController
 ```
