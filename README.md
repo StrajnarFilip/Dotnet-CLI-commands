@@ -10,3 +10,8 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.
 ```sh
 dotnet-aspnet-codegenerator controller -async -api -outDir Controllers -name MyController
 ```
+
+# Publish single file executable
+```sh
+ dotnet publish -r win-x64 -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --self-contained true
+```
