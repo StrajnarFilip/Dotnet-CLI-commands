@@ -15,3 +15,10 @@ dotnet-aspnet-codegenerator controller -async -api -outDir Controllers -name MyC
 ```sh
  dotnet publish -r win-x64 -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true --self-contained true
 ```
+
+# Entity Framework Core migration + update
+
+```sh
+dotnet ef migrations add MigrationName
+dotnet ef database update
+```
