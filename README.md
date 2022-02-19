@@ -50,7 +50,7 @@ dotnet ef database update
 # Create project
 dotnet new webapi
 # For mvc: dotnet new mvc
-# But remove --restWithNoViews
+# For mvc: But remove --restWithNoViews
 # Install required
 dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.2
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
