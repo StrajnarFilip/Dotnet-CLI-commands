@@ -73,4 +73,8 @@ dotnet-aspnet-codegenerator controller `
 --referenceScriptLibraries `
 -sqlite `
 --restWithNoViews
+
+# Update the database - Change migration name
+dotnet ef migrations add MigrationName
+dotnet ef database update
 ```
