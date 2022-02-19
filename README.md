@@ -58,7 +58,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 dotnet-aspnet-codegenerator controller `
 -name NameController `
--m ModelName `
+-m ModelClassName `
 -dc MyDataContext `
 --relativeFolderPath Controllers `
 --useDefaultLayout `
