@@ -63,5 +63,6 @@ dotnet-aspnet-codegenerator controller `
 --relativeFolderPath Controllers `
 --useDefaultLayout `
 --referenceScriptLibraries `
--sqlite
+-sqlite `
+--restWithNoViews
 ```
