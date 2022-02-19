@@ -11,7 +11,8 @@ Set path
 
 Add path Windows
 ```ps1
-[System.Environment]::SetEnvironmentVariable("Path",
+[System.Environment]::SetEnvironmentVariable(
+"Path",
 "$([System.Environment]::GetEnvironmentVariable("Path",[System.EnvironmentVariableTarget]::User));NewValue",
 [System.EnvironmentVariableTarget]::User)
 ```
