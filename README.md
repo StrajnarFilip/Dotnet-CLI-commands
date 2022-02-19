@@ -63,6 +63,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 Create a public class anywhere. Continue with:
 ```ps1
+# Change the name of controller (-name option) and model class (-m option)
 dotnet-aspnet-codegenerator controller `
 -name NameController `
 -m ModelClassName `
