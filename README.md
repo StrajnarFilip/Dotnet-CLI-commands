@@ -41,3 +41,15 @@ dotnet-aspnet-codegenerator controller -async -api -outDir Controllers -name MyC
 dotnet ef migrations add MigrationName
 dotnet ef database update
 ```
+
+
+# ASP.NET api with codegen
+```ps1
+# Create project
+dotnet new webapi
+# Install required
+dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.2
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
+
+
+```
