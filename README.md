@@ -45,6 +45,8 @@ dotnet ef database update
 
 # ASP.NET api with codegen
 ```ps1
+# Setup
+#
 # Create project
 dotnet new webapi
 # Install required
@@ -56,6 +58,8 @@ dotnet add package Microsoft.EntityFrameworkCore.SQLite
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ```
+
+Create a public class anywhere. Continue with:
 ```ps1
 dotnet-aspnet-codegenerator controller `
 -name NameController `
