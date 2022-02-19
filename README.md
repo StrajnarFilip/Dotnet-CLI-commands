@@ -1,3 +1,19 @@
+# Environment variables
+Get path
+```ps1
+[System.Environment]::GetEnvironmentVariable("Path",[System.EnvironmentVariableTarget]::User)
+```
+
+Set path
+```ps1
+[System.Environment]::SetEnvironmentVariable("Path","Value",[System.EnvironmentVariableTarget]::User])
+```
+
+Add path Windows
+```ps1
+[System.Environment]::SetEnvironmentVariable("Path","$([System.Environment]::GetEnvironmentVariable("Path",[System.EnvironmentVariableTarget]::User));NewValue",[System.EnvironmentVariableTarget]::User])
+```
+
 # ASP codegen setup
 
 ```sh
