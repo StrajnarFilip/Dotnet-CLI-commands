@@ -50,6 +50,18 @@ dotnet new webapi
 # Install required
 dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.2
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
-
+dotnet-aspnet-codegenerator controller `
+-name NameController `
+-m ModelName `
+-dc MyDataContext `
+--relativeFolderPath Controllers `
+--useDefaultLayout `
+--referenceScriptLibraries `
+-sqlite
 ```
