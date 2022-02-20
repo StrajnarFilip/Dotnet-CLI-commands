@@ -50,7 +50,6 @@ dotnet ef database update
 # Create project
 dotnet new webapi
 # For mvc: dotnet new mvc
-# For mvc: But remove --restWithNoViews
 # Install required
 dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.2
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
@@ -64,6 +63,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 Create a public class anywhere. Continue with:
 ```ps1
 # Change the name of controller (-name option) and model class (-m option)
+# For mvc: But remove --restWithNoViews
 dotnet-aspnet-codegenerator controller `
 -name NameController `
 -m ModelClassName `
