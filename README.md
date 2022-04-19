@@ -6,7 +6,7 @@ Get path
 
 Set path
 ```ps1
-[System.Environment]::SetEnvironmentVariable("Path","Value",[System.EnvironmentVariableTarget]::User])
+[System.Environment]::SetEnvironmentVariable("Path","Value",[System.EnvironmentVariableTarget]::User)
 ```
 
 Add path Windows
